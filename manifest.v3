@@ -15,17 +15,18 @@
     <value name="SIQACloudStreamsTests">1.0</value>
     <value name="SIQAJDBCAdapterTests">1.0</value>
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
+    <value name="WmSalesforceRESTProvider">10.7.0.0.196</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">28</value>
+  <value name="build">29</value>
   <null name="description"/>
   <value name="created_date">18-09-2025 10:32:01 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-09-18T12:05:25.455574977Z</value>
+  <value name="lastUpdated">2025-09-18T12:06:30.352512295Z</value>
   <value name="wmProjectId">flb421bbd06230a94b839950</value>
   <value name="creator">Kumari Rajni Singh</value>
 </Values>
