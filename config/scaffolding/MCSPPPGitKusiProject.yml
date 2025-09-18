@@ -22,3 +22,8 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Rajni25Aug
   gitBranch: main
+- name: DADA_GlobalVariable1
+  gitServerName: MJANGIT
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: gv25var
