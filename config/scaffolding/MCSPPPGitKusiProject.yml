@@ -32,3 +32,8 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: SIQAJDBCAdapterTests
+  gitServerName: MJANGIT
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
