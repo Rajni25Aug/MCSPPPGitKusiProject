@@ -48,34 +48,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: WmSalesforceRESTProvider
+  version: 10.7.0.0.196
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 services:
-- serviceName: project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
-  packages:
-  - name: MCSPPPGitKusiProject
-    version: "1.0"
-  - name: JMS2waySSL
-    version: "1.0"
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: JMSTest
-    version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.66
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-  - name: WmSalesforceRESTProvider
-    version: 10.7.0.0.196
-- serviceName: project.mcspppgitkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:SalesTest
+- serviceName: project.mcspppgitkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:SalesforceTest
   packages:
   - name: MCSPPPGitKusiProject
     version: "1.0"
@@ -123,62 +100,6 @@ services:
     version: "1.0"
   - name: WmSalesforceRESTProvider
     version: 10.7.0.0.196
-- serviceName: project.mcspppgitkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:SalesforceTest
-  packages:
-  - name: MCSPPPGitKusiProject
-    version: "1.0"
-  - name: JMS2waySSL
-    version: "1.0"
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: JMSTest
-    version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.66
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-  - name: WmSalesforceRESTProvider
-    version: 10.7.0.0.196
-- serviceName: project.mcspppgitkusi.integrations:Sum
-  packages:
-  - name: MCSPPPGitKusiProject
-    version: "1.0"
-  - name: JMS2waySSL
-    version: "1.0"
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: JMSTest
-    version: "1.0"
-  - name: SIQAJDBCAdapterTests
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.66
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-  - name: WmSalesforceRESTProvider
-    version: 10.7.0.0.196
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2090
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2090
 - serviceName: project.mcspppgitkusi.integrations:deepclonetest
   packages:
   - name: MCSPPPGitKusiProject
@@ -216,6 +137,38 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2090
 - serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2090
+- serviceName: project.mcspppgitkusi.integrations:Sum
+  packages:
+  - name: MCSPPPGitKusiProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.196
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2090
+- serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
     version: 11.1.0.0.2090
@@ -312,100 +265,16 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.accessTokenRefreshURL
-  : https://login.salesforce.com/services/oauth2/token
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth.consumerSecret
-  : "{AES}ePv9vDKXdd6A2HDsPDBAO8y1Fe9R7m6Dya5xSCLlAK353vKmgg/uiZT0YAoUU42Eojf9A5EvRE+pSL3aLrpBNWmK1wuN3U1rA1B0VhuZoUw="
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.expireTimeout
-  : "1000"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.authorizationServerUrl
-  : https://login.salesforce.com/services/oauth2/authorize
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.startupRetryCount
-  : "0"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.retryCount
-  : "4"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.reuseAddr
-  : "false"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.maximumPoolSize
-  : "10"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.providerUrl
-  : https://sag53-dev-ed.develop.my.salesforce.com
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.startupBackoffSecs
-  : "10"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.socketStaleCheck
-  : "true"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.hostnameVerifier
-  : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.authorizationHeaderPrefix
-  : Bearer
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.timeoutType
-  : auto
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.enableCompression
-  : "false"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.minimumPoolSize
-  : "1"
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.authorizationHeaderInTokenRefresh
-  : "false"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth.consumerId
-  : 3MVG9k02hQhyUgQCKlnwOVc1lTfY9AqPHmUIRA6I.ZqYzln.F3Vuok.Rk6d6F00IhbOJxstGzhIJDyuJGd0ft
-  ? iscloudstreamsconnectorservice.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:SalesforceTest.virtualServiceName
-  : WmCloudStreams.RestVS
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.tcpNoDelay
-  : "false"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.blockTimeout
-  : "1000"
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "3306"
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth.accessToken
-  : "{AES}h1r1CmTvU65r25EqPgWKVSzkSFvqIdC7d4K6vaaUy7kOjJj/Z+sUuGCAhNZ+jHLFQBa+7ci1jmMWoSm5kz4JGyzQ2foRx0C7F0jHtF+rTtXp1m+8/DQlgOacMPbb/LNHf3bD/tPoO+CKk+rTna+HqWmK1wuN3U1rA1B0VhuZoUw="
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.refreshToken
-  : "{AES}z0OyKRGMCuSrw5+VwAKX9/oM6BIKjPeYnDaBN96E5WE51ihADTbuVPxNgEzibj4QZ+EkdVmuzavsuGo7cSFFyYqssvQYfu051UABuvfGck7t1OSEZFCXaC8TXIG3+XjN"
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MySQL
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.scope
-  : offline_access api refresh_token
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cx.grant_type
-  : refresh_token
-  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
-  : ""
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.connectionEnabled
-  : "true"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.idleTimeout
-  : "-1"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.refreshAccessToken
-  : "true"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.retryIfRequestSentOk
-  : "true"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.authenticationServerUrl
-  : https://login.salesforce.com/services/oauth2/token
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.oauth_v20.accessTokenRefreshURLRequest
-  : URL Query String
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.poolable
-  : "true"
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : test
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : 9.46.196.248
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.validateAfterInactivity
-  : "1000"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.enableSNI
-  : "true"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
@@ -418,25 +287,31 @@ configurationVariables:
   : siqatest
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.socketLinger
-  : "-1"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.readTimeout
-  : "30000"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.keepAliveInterval
-  : "300000"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
   ? iscloudstreamsconnectorservice.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:SalesforceTest.connectionAlias
   : project.mcspppgitkusi.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:SalesTest
+  ? iscloudstreamsconnectorservice.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:SalesforceTest.virtualServiceName
+  : WmCloudStreams.RestVS
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.connectTimeout
-  : "30000"
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.cn.sockBuffSize
-  : "8192"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
-  ? cloudstreamsconnection.project..mcspppgitkusi..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:SalesTest.poolIncrementSize
-  : "1"
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
   ? artConnection.MCSPPPGitKusiProject.project.mcspppgitkusi.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : MYSQL_DATABASE
